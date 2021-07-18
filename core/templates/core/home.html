@@ -1,0 +1,21 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %} 
+<div class="mt-5">
+ <div class="text-center">
+  <img src="{% static 'core/images/pic1.jpg' %}" alt="ProfilePic" class="img-thumbnail" width="250px" height="150px">
+ </div>
+ <div class="mt-5 text-white mx-5 text-justify">
+  <h1 class="font-weight-bold st-font">Hello,</h1>
+  <div class="px-4" style="line-height:2rem;">
+   <p style="text-indent:100px;"> I am <b class="text-warning">Kartavya Verma</b> ,a third year undergraduate having a keen interest in exploring various technologies around the world. I have a strong passion for building webapps with innovative software solutions, content marketing and community management. I worked on various python projects and projects on Internet of Things(IOT) using arduino. I do competitive programming and loves to gain knowledge about the various innovations and tech stuff.</p>
+    <p>I'm a learner and believes in adopting the changes required for the future.This website compiles my diverse experiences and ideas.
+   I have worked on several technologies and have very high interest in Python and IOT.</p>
+  </div>
+ </div>
+ <div class="text-center">
+  <a href="https://drive.google.com/file/d/1Qb2EAjY5B9EzFfypGydsfs98p8BYHXJg/view?usp=sharing" class="btn btn-outline-warning my-3 mr-5">Resume</a>
+  <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+ </div>
+</div>
+{% endblock content %}
